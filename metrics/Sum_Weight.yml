@@ -1,6 +1,6 @@
 unique_name: Sum_Weight
 object_type: metric
-label: Weight
+label: Sum_Weight
 calculation_method: sum
 column: WEIGHT
 dataset: V_VIEWING_30

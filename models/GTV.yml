@@ -5,6 +5,8 @@ dimensions: []
 metrics:
   - unique_name: Sum_Weight
     folder: Metrics
+  - unique_name: Sum_Universe
+    folder: Metrics
 relationships:
   - unique_name: empty_dataset_New_Dimension
     from:
@@ -108,10 +110,19 @@ relationships:
     to:
       dimension: Residency
       level: Residency
-  - unique_name: empty_dataset_Location
+  - unique_name: V_VIEWING_30_LOCATION_ID_to_Location_Location
     from:
-      dataset: ''
-      join_columns: []
+      dataset: V_VIEWING_30
+      join_columns:
+        - LOCATION_ID
     to:
       dimension: Location
-      level: ''
+      level: Location
+  - unique_name: V_VIEWING_30_HALFHOUR_MINUTE_ID_to_Minutes_30min
+    from:
+      dataset: V_VIEWING_30
+      join_columns:
+        - HALFHOUR_MINUTE_ID
+    to:
+      dimension: Minutes
+      level: 30min
