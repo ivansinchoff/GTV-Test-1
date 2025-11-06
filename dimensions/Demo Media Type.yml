@@ -1,16 +1,20 @@
 unique_name: Demo Media Type
 object_type: dimension
 label: Demo Media Type
-hierarchies: []
+hierarchies:
+  - unique_name: Demo Media Type Hierarchy
+    label: Demo Media Type Hierarchy
+    levels:
+      - unique_name: Demo Media Type
 level_attributes:
-  - unique_name: V_DEMO_MEDIA_TYPE_empty_attr
-    label: V_DEMO_MEDIA_TYPE_empty_attr
+  - unique_name: Demo Media Type
+    label: Demo Media Type
     contains_unique_names: false
     dataset: V_DEMO_MEDIA_TYPE
-    is_hidden: true
     is_unique_key: false
-    key_columns: []
-    name_column: ''
+    key_columns:
+      - DEMO_MEDIA_TYPE_ID
+    name_column: DEMO_MEDIA_TYPE_DESC
 relationships:
   - unique_name: ''
     from:

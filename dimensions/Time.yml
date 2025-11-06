@@ -1,25 +1,54 @@
 unique_name: Time
 object_type: dimension
 label: Time
-hierarchies: []
+hierarchies:
+  - unique_name: Broadcast Time Hierarchy
+    label: Broadcast Time Hierarchy
+    levels:
+      - unique_name: Broadcast Year
+      - unique_name: Broadcast QTR
+      - unique_name: Broadcast Month
+      - unique_name: Broadcast Week
+      - unique_name: Time ID
 level_attributes:
-  - unique_name: V_TIME_empty_attr
-    label: V_TIME_empty_attr
+  - unique_name: Time ID
+    label: Time ID
     contains_unique_names: false
     dataset: V_TIME
-    is_hidden: true
-    is_unique_key: false
-    key_columns: []
-    name_column: ''
-relationships:
-  - unique_name: ''
-    from:
-      dataset: ''
-      hierarchy: ''
-      join_columns: []
-      level: ''
-    to:
-      dimension: New Dimension
-      level: ''
-    type: embedded
-type: standard
+    key_columns:
+      - TIMEID
+    name_column: TIMEID
+    time_unit: day
+  - unique_name: Broadcast Week
+    label: Broadcast Week
+    contains_unique_names: false
+    dataset: V_TIME
+    key_columns:
+      - BROADCAST_WEEK_CD
+    name_column: BROADCAST_WEEK_CD
+    time_unit: week
+  - unique_name: Broadcast Month
+    label: Broadcast Month
+    contains_unique_names: false
+    dataset: V_TIME
+    key_columns:
+      - BROADCAST_MONTH_CD
+    name_column: BROADCAST_MONTH_CD
+    time_unit: month
+  - unique_name: Broadcast QTR
+    label: Broadcast QTR
+    contains_unique_names: false
+    dataset: V_TIME
+    key_columns:
+      - BROADCAST_QTR_DESC
+    name_column: BROADCAST_QTR_DESC
+    time_unit: quarter
+  - unique_name: Broadcast Year
+    label: Broadcast Year
+    contains_unique_names: false
+    dataset: V_TIME
+    key_columns:
+      - BROADCAST_YEAR_CD
+    name_column: BROADCAST_YEAR_CD
+    time_unit: year
+type: time

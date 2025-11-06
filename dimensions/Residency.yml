@@ -1,14 +1,18 @@
 unique_name: Residency
 object_type: dimension
 label: Residency
-hierarchies: []
+hierarchies:
+  - unique_name: Residency Hierarchy
+    label: Residency Hierarchy
+    levels:
+      - unique_name: Residency
 level_attributes:
-  - unique_name: V_RESIDENCY_empty_attr
-    label: V_RESIDENCY_empty_attr
+  - unique_name: Residency
+    label: Residency
     contains_unique_names: false
     dataset: V_RESIDENCY
-    is_hidden: true
     is_unique_key: false
-    key_columns: []
-    name_column: ''
+    key_columns:
+      - RESIDENCY_ID
+    name_column: RESIDENCY
 type: standard

@@ -1,14 +1,27 @@
 unique_name: Minutes
 object_type: dimension
 label: Minutes
-hierarchies: []
+hierarchies:
+  - unique_name: Minutes Hierarchy
+    label: Minutes Hierarchy
+    levels:
+      - unique_name: Hour
+      - unique_name: 30min
 level_attributes:
-  - unique_name: V_MINUTES_empty_attr
-    label: V_MINUTES_empty_attr
+  - unique_name: 30min
+    label: 30min
     contains_unique_names: false
     dataset: V_MINUTES
-    is_hidden: true
     is_unique_key: false
-    key_columns: []
-    name_column: ''
+    key_columns:
+      - HALFHOUR_MINUTE_ID
+    name_column: HALFHOUR_MINUTE_ID
+  - unique_name: Hour
+    label: Hour
+    contains_unique_names: false
+    dataset: V_MINUTES
+    key_columns:
+      - HOUR_ID
+    name_column: HOUR_CD
+relationships: []
 type: standard

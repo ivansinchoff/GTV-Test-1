@@ -1,14 +1,18 @@
 unique_name: Age
 object_type: dimension
 label: Age
-hierarchies: []
+hierarchies:
+  - unique_name: Age Hierarchy
+    label: Age Hierarchy
+    levels:
+      - unique_name: Age
 level_attributes:
-  - unique_name: V_AGE_empty_attr
-    label: V_AGE_empty_attr
+  - unique_name: Age
+    label: Age
     contains_unique_names: false
     dataset: V_AGE
-    is_hidden: true
     is_unique_key: false
-    key_columns: []
-    name_column: ''
+    key_columns:
+      - AGE_ID
+    name_column: AGE_DESC
 type: standard

@@ -1,17 +1,19 @@
 unique_name: Gender
 object_type: dimension
 label: Gender
-hierarchies: []
-level_attributes: []
-relationships:
-  - unique_name: ''
-    from:
-      dataset: ''
-      hierarchy: ''
-      join_columns: []
-      level: ''
-    to:
-      dimension: New Dimension
-      level: ''
-    type: embedded
+hierarchies:
+  - unique_name: Gender Hierarchy
+    label: Gender Hierarchy
+    levels:
+      - unique_name: Gender
+level_attributes:
+  - unique_name: Gender
+    label: Gender
+    contains_unique_names: false
+    dataset: V_GENDER
+    is_unique_key: true
+    key_columns:
+      - GENDER_ID
+    name_column: GENDER_DESC
+    sort_column: GENDER_ID
 type: standard

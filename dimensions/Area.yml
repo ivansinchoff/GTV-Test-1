@@ -1,16 +1,20 @@
 unique_name: Area
 object_type: dimension
 label: Area
-hierarchies: []
+hierarchies:
+  - unique_name: Area Hierarchy
+    label: Area Hierarchy
+    levels:
+      - unique_name: Area
 level_attributes:
-  - unique_name: V_AREA_empty_attr
-    label: V_AREA_empty_attr
+  - unique_name: Area
+    label: Area
     contains_unique_names: false
     dataset: V_AREA
-    is_hidden: true
     is_unique_key: false
-    key_columns: []
-    name_column: ''
+    key_columns:
+      - AREA_ID
+    name_column: AREA_DESC
 relationships:
   - unique_name: ''
     from:

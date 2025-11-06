@@ -1,0 +1,117 @@
+unique_name: GTV
+object_type: model
+label: GTV
+dimensions: []
+metrics:
+  - unique_name: Sum_Weight
+    folder: Metrics
+relationships:
+  - unique_name: empty_dataset_New_Dimension
+    from:
+      dataset: ''
+      join_columns: []
+    to:
+      dimension: New Dimension
+      level: ''
+  - unique_name: V_VIEWING_30_ACTIVITY_ID_to_Activity_Activity Level
+    from:
+      dataset: V_VIEWING_30
+      join_columns:
+        - ACTIVITY_ID
+    to:
+      dimension: Activity
+      level: Activity Level
+  - unique_name: V_DEMOGRAPHIC_TIME_ID_to_Time_Time ID
+    from:
+      dataset: V_DEMOGRAPHIC
+      join_columns:
+        - TIME_ID
+    to:
+      dimension: Time
+      level: Time ID
+  - unique_name: V_DEMOGRAPHIC_AGE_ID_to_Age_Age
+    from:
+      dataset: V_DEMOGRAPHIC
+      join_columns:
+        - AGE_ID
+    to:
+      dimension: Age
+      level: Age
+  - unique_name: V_VIEWING_30_ACTIVITY_ID_to_Activity_Activity
+    from:
+      dataset: V_VIEWING_30
+      join_columns:
+        - ACTIVITY_ID
+    to:
+      dimension: Activity
+      level: Activity
+  - unique_name: V_DEMOGRAPHIC_AREA_ID_to_Area_Area
+    from:
+      dataset: V_DEMOGRAPHIC
+      join_columns:
+        - AREA_ID
+    to:
+      dimension: Area
+      level: Area
+  - unique_name: V_VIEWING_30_CHANNEL_ID_to_Channel_Channel
+    from:
+      dataset: V_VIEWING_30
+      join_columns:
+        - CHANNEL_ID
+    to:
+      dimension: Channel
+      level: Channel
+  - unique_name: V_DEMOGRAPHIC_SAMPLE_TYPE_ID_to_Sample Type_Sample Type
+    from:
+      dataset: V_DEMOGRAPHIC
+      join_columns:
+        - SAMPLE_TYPE_ID
+    to:
+      dimension: Sample Type
+      level: Sample Type
+  - unique_name: V_DEMOGRAPHIC_GENDER_ID_to_Gender_Gender
+    from:
+      dataset: V_DEMOGRAPHIC
+      join_columns:
+        - GENDER_ID
+    to:
+      dimension: Gender
+      level: Gender
+  - unique_name: empty_dataset_Factor
+    from:
+      dataset: ''
+      join_columns: []
+    to:
+      dimension: Factor
+      level: ''
+  - unique_name: V_DEMOGRAPHIC_MARKET_ID_to_Market_Market
+    from:
+      dataset: V_DEMOGRAPHIC
+      join_columns:
+        - MARKET_ID
+    to:
+      dimension: Market
+      level: Market
+  - unique_name: V_DEMOGRAPHIC_SES_ID_to_SES_SES Level
+    from:
+      dataset: V_DEMOGRAPHIC
+      join_columns:
+        - SES_ID
+    to:
+      dimension: SES
+      level: SES Level
+  - unique_name: V_VIEWING_30_RESIDENCY_ID_to_Residency_Residency
+    from:
+      dataset: V_VIEWING_30
+      join_columns:
+        - RESIDENCY_ID
+    to:
+      dimension: Residency
+      level: Residency
+  - unique_name: empty_dataset_Location
+    from:
+      dataset: ''
+      join_columns: []
+    to:
+      dimension: Location
+      level: ''

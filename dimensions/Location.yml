@@ -1,16 +1,20 @@
 unique_name: Location
 object_type: dimension
 label: Location
-hierarchies: []
+hierarchies:
+  - unique_name: Location Hierarchy
+    label: Location Hierarchy
+    levels:
+      - unique_name: Location
 level_attributes:
-  - unique_name: V_LOCATION_empty_attr
-    label: V_LOCATION_empty_attr
+  - unique_name: Location
+    label: Location
     contains_unique_names: false
     dataset: V_LOCATION
-    is_hidden: true
     is_unique_key: false
-    key_columns: []
-    name_column: ''
+    key_columns:
+      - LOCATION_ID
+    name_column: LOCATION_DESC
 relationships:
   - unique_name: ''
     from:

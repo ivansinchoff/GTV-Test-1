@@ -1,25 +1,18 @@
 unique_name: Media Type
 object_type: dimension
 label: Media Type
-hierarchies: []
+hierarchies:
+  - unique_name: Media Type Hierarchy
+    label: Media Type Hierarchy
+    levels:
+      - unique_name: Media Type
 level_attributes:
-  - unique_name: V_MEDIA_TYPE_empty_attr
-    label: V_MEDIA_TYPE_empty_attr
+  - unique_name: Media Type
+    label: Media Type
     contains_unique_names: false
     dataset: V_MEDIA_TYPE
-    is_hidden: true
     is_unique_key: false
-    key_columns: []
-    name_column: ''
-relationships:
-  - unique_name: ''
-    from:
-      dataset: ''
-      hierarchy: ''
-      join_columns: []
-      level: ''
-    to:
-      dimension: New Dimension
-      level: ''
-    type: embedded
+    key_columns:
+      - MEDIA_TYPE_ID
+    name_column: MEDIA_TYPE_DESC
 type: standard

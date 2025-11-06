@@ -1,16 +1,20 @@
 unique_name: SES
 object_type: dimension
 label: SES
-hierarchies: []
+hierarchies:
+  - unique_name: SES Hierarchy
+    label: SES Hierarchy
+    levels:
+      - unique_name: SES Level
 level_attributes:
-  - unique_name: V_SES_empty_attr
-    label: V_SES_empty_attr
+  - unique_name: SES Level
+    label: SES Level
     contains_unique_names: false
     dataset: V_SES
-    is_hidden: true
     is_unique_key: false
-    key_columns: []
-    name_column: ''
+    key_columns:
+      - SES_LEVEL_ID
+    name_column: SES_LEVEL
 relationships:
   - unique_name: ''
     from:

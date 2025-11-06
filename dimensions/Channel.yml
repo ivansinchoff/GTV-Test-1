@@ -5,7 +5,7 @@ hierarchies:
   - unique_name: Channel Hierarchy
     label: Channel Hierarchy
     levels:
-      - unique_name: BRAND_ID
+      - unique_name: Brand
       - unique_name: Channel
 level_attributes:
   - unique_name: Channel
@@ -17,8 +17,8 @@ level_attributes:
       - CHANNEL_ID
     name_column: CHANNELNAME
     sort_column: CHANNELNAME
-  - unique_name: BRAND_ID
-    label: BRAND_ID
+  - unique_name: Brand
+    label: Brand
     contains_unique_names: false
     dataset: V_CHANNELS
     key_columns:
@@ -26,26 +26,6 @@ level_attributes:
     name_column: BRANDNAME
     sort_column: BRANDNAME
 relationships:
-  - unique_name: ''
-    from:
-      dataset: ''
-      hierarchy: ''
-      join_columns: []
-      level: ''
-    to:
-      dimension: Activity
-      level: ''
-    type: embedded
-  - unique_name: ''
-    from:
-      dataset: ''
-      hierarchy: ''
-      join_columns: []
-      level: ''
-    to:
-      dimension: Age
-      level: ''
-    type: embedded
   - unique_name: ''
     from:
       dataset: ''

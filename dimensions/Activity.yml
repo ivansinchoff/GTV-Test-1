@@ -1,25 +1,18 @@
 unique_name: Activity
 object_type: dimension
 label: Activity
-hierarchies: []
+hierarchies:
+  - unique_name: Activity Hierarchy
+    label: Activity Hierarchy
+    levels:
+      - unique_name: Activity
 level_attributes:
-  - unique_name: V_ACTIVITY_empty_attr
-    label: V_ACTIVITY_empty_attr
+  - unique_name: Activity
+    label: Activity
     contains_unique_names: false
     dataset: V_ACTIVITY
-    is_hidden: true
     is_unique_key: false
-    key_columns: []
-    name_column: ''
-relationships:
-  - unique_name: ''
-    from:
-      dataset: ''
-      hierarchy: ''
-      join_columns: []
-      level: ''
-    to:
-      dimension: New Dimension
-      level: ''
-    type: embedded
+    key_columns:
+      - ACTIVITY_ID
+    name_column: ACTIVITY_DESC
 type: standard

@@ -1,16 +1,21 @@
 unique_name: Factor
 object_type: dimension
 label: Factor
-hierarchies: []
+hierarchies:
+  - unique_name: Factor Hierarchy
+    label: Factor Hierarchy
+    levels:
+      - unique_name: Factor Level
+        is_hidden: true
 level_attributes:
-  - unique_name: V_FACTOR_empty_attr
-    label: V_FACTOR_empty_attr
+  - unique_name: Factor Level
+    label: Factor Level
     contains_unique_names: false
     dataset: V_FACTOR
-    is_hidden: true
     is_unique_key: false
-    key_columns: []
-    name_column: ''
+    key_columns:
+      - FACTOR_ID
+    name_column: FACTOR_ID
 relationships:
   - unique_name: ''
     from:

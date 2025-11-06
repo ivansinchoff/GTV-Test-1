@@ -1,0 +1,7 @@
+unique_name: Sum_Weight
+object_type: metric
+label: Weight
+calculation_method: sum
+column: WEIGHT
+dataset: V_VIEWING_30
+format: general number
