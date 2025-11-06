@@ -1,0 +1,10 @@
+unique_name: V_ACTIVITY
+object_type: dataset
+label: V_ACTIVITY
+columns:
+  - name: ACTIVITY_ID
+    data_type: decimal(38,0)
+  - name: ACTIVITY_DESC
+    data_type: string
+connection_id: con_TECH_DW_DB_ATSCALE_PUBL
+table: V_ACTIVITY

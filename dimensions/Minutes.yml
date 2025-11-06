@@ -1,0 +1,14 @@
+unique_name: Minutes
+object_type: dimension
+label: Minutes
+hierarchies: []
+level_attributes:
+  - unique_name: V_MINUTES_empty_attr
+    label: V_MINUTES_empty_attr
+    contains_unique_names: false
+    dataset: V_MINUTES
+    is_hidden: true
+    is_unique_key: false
+    key_columns: []
+    name_column: ''
+type: standard

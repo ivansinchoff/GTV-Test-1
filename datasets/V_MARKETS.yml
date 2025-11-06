@@ -1,0 +1,14 @@
+unique_name: V_MARKETS
+object_type: dataset
+label: V_MARKETS
+columns:
+  - name: MARKET_ID
+    data_type: decimal(38,0)
+  - name: MARKET_DESC
+    data_type: string
+  - name: COUNTRY_ID
+    data_type: decimal(38,0)
+  - name: SOURCE_ID
+    data_type: decimal(38,0)
+connection_id: con_TECH_DW_DB_ATSCALE_PUBL
+table: V_MARKETS

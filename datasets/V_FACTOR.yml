@@ -1,0 +1,22 @@
+unique_name: V_FACTOR
+object_type: dataset
+label: V_FACTOR
+columns:
+  - name: GENDER_ID
+    data_type: decimal(38,0)
+  - name: AGE_ID
+    data_type: decimal(38,0)
+  - name: AGE_TYPE
+    data_type: decimal(1,0)
+  - name: AGE_MIN
+    data_type: decimal(2,0)
+  - name: AGE_MAX
+    data_type: decimal(2,0)
+  - name: SES_ID
+    data_type: string
+  - name: FACTOR_ID
+    data_type: string
+  - name: FACTOR_ID_SUB
+    data_type: string
+connection_id: con_TECH_DW_DB_ATSCALE_PUBL
+table: V_FACTOR

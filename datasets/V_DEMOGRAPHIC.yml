@@ -1,0 +1,38 @@
+unique_name: V_DEMOGRAPHIC
+object_type: dataset
+label: V_DEMOGRAPHIC
+columns:
+  - name: TIME_ID
+    data_type: decimal(38,0)
+  - name: MEMBER_ID
+    data_type: decimal(38,0)
+  - name: WEIGHT
+    data_type: decimal(12,8)
+  - name: MARKET_ID
+    data_type: decimal(38,0)
+  - name: DEMO_MEDIA_TYPE_ID
+    data_type: decimal(38,0)
+  - name: SAMPLE_TYPE_ID
+    data_type: decimal(38,0)
+  - name: GENDER_ID
+    data_type: decimal(38,0)
+  - name: AGE_ID
+    data_type: decimal(38,0)
+  - name: SOURCE_ID
+    data_type: decimal(38,0)
+  - name: SES_ID
+    data_type: string
+  - name: DEMO_VIEW_ID
+    data_type: string
+  - name: DATE
+    data_type: datetime
+  - name: AREA_ID
+    data_type: decimal(38,0)
+  - name: HAS_CHILDREN
+    data_type: string
+  - name: HOUSEWIFE
+    data_type: string
+  - name: HOUSEHOLD
+    data_type: string
+connection_id: con_TECH_DW_DB_ATSCALE_PUBL
+table: V_DEMOGRAPHIC

@@ -1,0 +1,10 @@
+unique_name: V_LOCATION
+object_type: dataset
+label: V_LOCATION
+columns:
+  - name: LOCATION_ID
+    data_type: decimal(38,0)
+  - name: LOCATION_DESC
+    data_type: string
+connection_id: con_TECH_DW_DB_ATSCALE_PUBL
+table: V_LOCATION

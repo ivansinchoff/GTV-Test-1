@@ -1,0 +1,22 @@
+unique_name: V_AGE
+object_type: dataset
+label: V_AGE
+columns:
+  - name: AGE_ID
+    data_type: decimal(38,0)
+  - name: AGE_DESC
+    data_type: string
+  - name: AGE_GROUP
+    data_type: string
+  - name: AGE_GROUP_2
+    data_type: string
+  - name: AGE_GROUP_3
+    data_type: string
+  - name: AGE_GROUP_4
+    data_type: string
+  - name: AGE_GROUP_5
+    data_type: string
+  - name: SORT_ORDER
+    data_type: decimal(38,0)
+connection_id: con_TECH_DW_DB_ATSCALE_PUBL
+table: V_AGE

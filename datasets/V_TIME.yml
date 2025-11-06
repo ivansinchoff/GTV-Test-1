@@ -1,0 +1,44 @@
+unique_name: V_TIME
+object_type: dataset
+label: V_TIME
+columns:
+  - name: TIMEID
+    data_type: decimal(38,0)
+  - name: TRANSACTION_DATE
+    data_type: date
+  - name: DAY_OF_WEEK_CD
+    data_type: string
+  - name: DAY_OF_WEEK_DESC
+    data_type: string
+  - name: FINANCIAL_DAY_CD
+    data_type: string
+  - name: FINANCIAL_MONTH_CD
+    data_type: string
+  - name: FINANCIAL_MONTH_DESC
+    data_type: string
+  - name: FINANCIAL_MONTH_NUM
+    data_type: decimal(38,0)
+  - name: FINANCIAL_QTR_CD
+    data_type: string
+  - name: FINANCIAL_QTR_DESC
+    data_type: string
+  - name: FINANCE_FILTER_YEAR
+    data_type: decimal(38,0)
+  - name: BROADCAST_QTR_CD
+    data_type: string
+  - name: BROADCAST_DAY_CD
+    data_type: string
+  - name: BROADCAST_WEEK_CD
+    data_type: string
+  - name: BROADCAST_MONTH_CD
+    data_type: string
+  - name: BROADCAST_QTR_DESC
+    data_type: string
+  - name: BROADCAST_YEAR_CD
+    data_type: string
+  - name: WEEKPART_CD
+    data_type: string
+  - name: BROADCAST_FILTER_YEAR
+    data_type: decimal(38,0)
+connection_id: con_TECH_DW_DB_ATSCALE_PUBL
+table: V_TIME

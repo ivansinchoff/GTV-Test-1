@@ -1,0 +1,10 @@
+unique_name: V_GENDER
+object_type: dataset
+label: V_GENDER
+columns:
+  - name: GENDER_ID
+    data_type: decimal(38,0)
+  - name: GENDER_DESC
+    data_type: string
+connection_id: con_TECH_DW_DB_ATSCALE_PUBL
+table: V_GENDER

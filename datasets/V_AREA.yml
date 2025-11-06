@@ -1,0 +1,10 @@
+unique_name: V_AREA
+object_type: dataset
+label: V_AREA
+columns:
+  - name: AREA_ID
+    data_type: decimal(38,0)
+  - name: AREA_DESC
+    data_type: string
+connection_id: con_TECH_DW_DB_ATSCALE_PUBL
+table: V_AREA

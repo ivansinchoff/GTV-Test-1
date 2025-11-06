@@ -1,0 +1,10 @@
+unique_name: V_RESIDENCY
+object_type: dataset
+label: V_RESIDENCY
+columns:
+  - name: RESIDENCY_ID
+    data_type: decimal(38,0)
+  - name: RESIDENCY
+    data_type: string
+connection_id: con_TECH_DW_DB_ATSCALE_PUBL
+table: V_RESIDENCY

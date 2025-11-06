@@ -1,0 +1,17 @@
+unique_name: Gender
+object_type: dimension
+label: Gender
+hierarchies: []
+level_attributes: []
+relationships:
+  - unique_name: ''
+    from:
+      dataset: ''
+      hierarchy: ''
+      join_columns: []
+      level: ''
+    to:
+      dimension: New Dimension
+      level: ''
+    type: embedded
+type: standard

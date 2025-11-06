@@ -1,0 +1,15 @@
+unique_name: Market
+object_type: dimension
+label: Market
+hierarchies: []
+level_attributes:
+  - unique_name: V_MARKETS_empty_attr
+    label: V_MARKETS_empty_attr
+    contains_unique_names: false
+    dataset: V_MARKETS
+    is_hidden: true
+    is_unique_key: false
+    key_columns: []
+    name_column: ''
+relationships: []
+type: standard

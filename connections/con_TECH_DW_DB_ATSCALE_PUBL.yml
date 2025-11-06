@@ -1,0 +1,6 @@
+unique_name: con_TECH_DW_DB_ATSCALE_PUBL
+object_type: connection
+label: con_TECH_DW_DB_ATSCALE_PUBL
+as_connection: WBD_Snowflake
+database: TECH_DW_DB
+schema: ATSCALE_PUBL

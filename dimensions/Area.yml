@@ -1,0 +1,25 @@
+unique_name: Area
+object_type: dimension
+label: Area
+hierarchies: []
+level_attributes:
+  - unique_name: V_AREA_empty_attr
+    label: V_AREA_empty_attr
+    contains_unique_names: false
+    dataset: V_AREA
+    is_hidden: true
+    is_unique_key: false
+    key_columns: []
+    name_column: ''
+relationships:
+  - unique_name: ''
+    from:
+      dataset: ''
+      hierarchy: ''
+      join_columns: []
+      level: ''
+    to:
+      dimension: New Dimension
+      level: ''
+    type: embedded
+type: standard

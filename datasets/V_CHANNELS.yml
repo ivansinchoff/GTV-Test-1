@@ -1,0 +1,28 @@
+unique_name: V_CHANNELS
+object_type: dataset
+label: V_CHANNELS
+columns:
+  - name: CHANNEL_ID
+    data_type: decimal(38,0)
+  - name: SOURCE_CHANNEL_CODE
+    data_type: string
+  - name: CHANNELNAME
+    data_type: string
+  - name: MARKET_ID
+    data_type: decimal(38,0)
+  - name: SOURCE_ID
+    data_type: decimal(38,0)
+  - name: VALID_FROM
+    data_type: datetime
+  - name: VALID_TO
+    data_type: datetime
+  - name: BRAND_ID
+    data_type: decimal(38,0)
+  - name: BRANDNAME
+    data_type: string
+  - name: MEDIA_TYPE_DESC
+    data_type: string
+  - name: IS_TOTALTV
+    data_type: string
+connection_id: con_TECH_DW_DB_ATSCALE_PUBL
+table: V_CHANNELS
