@@ -13,22 +13,18 @@ level_attributes:
     label: TimeID
     contains_unique_names: false
     dataset: V_TIME
-    is_unique_key: false
+    is_unique_key: true
     key_columns:
       - TIMEID
     name_column: TIMEID
     sort_column: TIMEID
-    time_unit: day
   - unique_name: Broadcast Year
     label: Broadcast Year
     contains_unique_names: false
     dataset: V_TIME
-    is_unique_key: false
     key_columns:
       - BROADCAST_YEAR_CD
     name_column: BROADCAST_YEAR_CD
-    sort_column: BROADCAST_YEAR_CD
-    time_unit: year
   - unique_name: Broadcast Month
     label: Broadcast Month
     contains_unique_names: false
@@ -37,5 +33,4 @@ level_attributes:
       - BROADCAST_MONTH_CD
     name_column: BROADCAST_MONTH_CD
     sort_column: FINANCIAL_MONTH_NUM
-    time_unit: month
-type: time
+type: standard
