@@ -8,11 +8,15 @@ metrics:
   - unique_name: Minutes_count
     folder: Metrics
   - unique_name: RatNum
+    folder: Metrics
   - unique_name: Demo_Date_Count
     folder: Support Metrics
   - unique_name: Sum_Universe
+    folder: Metrics
   - unique_name: RatTV
+    folder: Metrics
   - unique_name: ShrPct
+    folder: Metrics
 relationships:
   - unique_name: V_DEMOGRAPHIC_AGE_ID_to_Age_Age
     from:
