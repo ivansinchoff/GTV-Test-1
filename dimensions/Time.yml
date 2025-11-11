@@ -5,7 +5,8 @@ hierarchies:
   - unique_name: Time Hierarchy
     label: Time Hierarchy
     levels:
-      - unique_name: Broadcast Year
+      - unique_name: Year
+      - unique_name: Month
       - unique_name: TimeID
 level_attributes:
   - unique_name: TimeID
@@ -17,11 +18,20 @@ level_attributes:
       - TIMEID
     name_column: TIMEID
     sort_column: TIMEID
-  - unique_name: Broadcast Year
-    label: Broadcast Year
+  - unique_name: Year
+    label: Year
     contains_unique_names: false
     dataset: V_TIME
     key_columns:
-      - BROADCAST_YEAR_CD
-    name_column: BROADCAST_YEAR_CD
+      - FINANCE_FILTER_YEAR
+    name_column: FINANCE_FILTER_YEAR
+    sort_column: FINANCE_FILTER_YEAR
+  - unique_name: Month
+    label: Month
+    contains_unique_names: false
+    dataset: V_TIME
+    key_columns:
+      - FINANCIAL_MONTH_NUM
+    name_column: FINANCIAL_MONTH_DESC
+    sort_column: FINANCIAL_MONTH_NUM
 type: standard
