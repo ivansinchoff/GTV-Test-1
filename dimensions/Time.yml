@@ -32,6 +32,7 @@ level_attributes:
     dataset: V_TIME
     key_columns:
       - FINANCIAL_MONTH_NUM
+      - FINANCE_FILTER_YEAR
     name_column: FINANCIAL_MONTH_DESC
     sort_column: FINANCIAL_MONTH_NUM
 type: standard
