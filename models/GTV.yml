@@ -146,5 +146,5 @@ relationships:
       join_columns:
         - TIME_ID
     to:
-      dimension: Time
+      dimension: Calendar_Time
       level: TimeID

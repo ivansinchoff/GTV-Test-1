@@ -1,6 +1,6 @@
-unique_name: Time
+unique_name: Calendar_Time
 object_type: dimension
-label: Time
+label: Calendar_Time
 hierarchies:
   - unique_name: Time Hierarchy
     label: Time Hierarchy
