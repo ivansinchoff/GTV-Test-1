@@ -3,6 +3,5 @@ object_type: metric
 label: Sum_Universe
 description: Sum Universe
 calculation_method: sum
-column: WEIGHT
+column: Weight_USer
 dataset: V_DEMOGRAPHIC
-format: general number

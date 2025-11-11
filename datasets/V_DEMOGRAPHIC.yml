@@ -34,5 +34,8 @@ columns:
     data_type: string
   - name: HOUSEHOLD
     data_type: string
+  - name: Weight_USer
+    data_type: decimal(12,8)
+    sql: CASE WHEN SAMPLE_TYPE_ID = 1 THEN WEIGHT END
 connection_id: con_TECH_DW_DB_ATSCALE_PUBL
 table: V_DEMOGRAPHIC

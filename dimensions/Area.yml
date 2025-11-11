@@ -15,15 +15,5 @@ level_attributes:
     key_columns:
       - AREA_ID
     name_column: AREA_DESC
-relationships:
-  - unique_name: ''
-    from:
-      dataset: ''
-      hierarchy: ''
-      join_columns: []
-      level: ''
-    to:
-      dimension: New Dimension
-      level: ''
-    type: embedded
+
 type: standard

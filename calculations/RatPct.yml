@@ -1,0 +1,4 @@
+unique_name: RatPct
+object_type: metric_calc
+label: Rat%
+expression: '[Measures].[RatNum]'

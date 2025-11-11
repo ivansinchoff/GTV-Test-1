@@ -1,0 +1,18 @@
+unique_name: Time_ID
+object_type: dimension
+label: Time ID
+hierarchies:
+  - unique_name: Time_ID_Hierarchy
+    label: Time ID Hierarchy
+    levels:
+      - unique_name: Time_ID_Level
+is_degenerate: true
+level_attributes:
+  - unique_name: Time_ID_Level
+    label: Time ID Level
+    contains_unique_names: false
+    dataset: V_VIEWING_30
+    key_columns:
+      - TIME_ID
+    name_column: TIME_ID
+type: standard

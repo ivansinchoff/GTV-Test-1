@@ -1,0 +1,7 @@
+unique_name: Minutes_count
+object_type: metric
+label: Minutes_count
+description: Minutes
+calculation_method: count distinct
+column: TMINS
+dataset: V_VIEWING_30

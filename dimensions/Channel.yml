@@ -25,15 +25,6 @@ level_attributes:
       - BRAND_ID
     name_column: BRANDNAME
     sort_column: BRANDNAME
-relationships:
-  - unique_name: ''
-    from:
-      dataset: ''
-      hierarchy: ''
-      join_columns: []
-      level: ''
-    to:
-      dimension: New Dimension
-      level: ''
-    type: embedded
+
+
 type: standard

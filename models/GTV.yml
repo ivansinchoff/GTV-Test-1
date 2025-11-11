@@ -5,24 +5,14 @@ dimensions: []
 metrics:
   - unique_name: Sum_Weight
     folder: Metrics
-  - unique_name: Sum_Universe
+  - unique_name: Minutes_count
     folder: Metrics
+  - unique_name: RatNum
+  - unique_name: Demo_Date_Count
+    folder: Support Metrics
+  - unique_name: Sum_Universe
+ 
 relationships:
-  - unique_name: empty_dataset_New_Dimension
-    from:
-      dataset: ''
-      join_columns: []
-    to:
-      dimension: New Dimension
-      level: ''
-  - unique_name: V_VIEWING_30_ACTIVITY_ID_to_Activity_Activity Level
-    from:
-      dataset: V_VIEWING_30
-      join_columns:
-        - ACTIVITY_ID
-    to:
-      dimension: Activity
-      level: Activity Level
   - unique_name: V_DEMOGRAPHIC_TIME_ID_to_Time_Time ID
     from:
       dataset: V_DEMOGRAPHIC
@@ -79,13 +69,6 @@ relationships:
     to:
       dimension: Gender
       level: Gender
-  - unique_name: empty_dataset_Factor
-    from:
-      dataset: ''
-      join_columns: []
-    to:
-      dimension: Factor
-      level: ''
   - unique_name: V_DEMOGRAPHIC_MARKET_ID_to_Market_Market
     from:
       dataset: V_DEMOGRAPHIC
@@ -126,3 +109,51 @@ relationships:
     to:
       dimension: Minutes
       level: 30min
+  - unique_name: V_VIEWING_30_SAMPLE_TYPE_ID_to_Sample Type_Sample Type
+    from:
+      dataset: V_VIEWING_30
+      join_columns:
+        - SAMPLE_TYPE_ID
+    to:
+      dimension: Sample Type
+      level: Sample Type
+  - unique_name: V_VIEWING_30_GENDER_ID_to_Gender_Gender
+    from:
+      dataset: V_VIEWING_30
+      join_columns:
+        - GENDER_ID
+    to:
+      dimension: Gender
+      level: Gender
+  - unique_name: V_VIEWING_30_TIME_ID_to_Time_Time ID
+    from:
+      dataset: V_VIEWING_30
+      join_columns:
+        - TIME_ID
+    to:
+      dimension: Time
+      level: Time ID
+  - unique_name: V_VIEWING_30_AGE_ID_to_Age_Age
+    from:
+      dataset: V_VIEWING_30
+      join_columns:
+        - AGE_ID
+    to:
+      dimension: Age
+      level: Age
+  - unique_name: V_VIEWING_30_MARKET_ID_to_Market_Market
+    from:
+      dataset: V_VIEWING_30
+      join_columns:
+        - MARKET_ID
+    to:
+      dimension: Market
+      level: Market
+  - unique_name: V_VIEWING_30_AREA_ID_to_Area_Area
+    from:
+      dataset: V_VIEWING_30
+      join_columns:
+        - AREA_ID
+    to:
+      dimension: Area
+      level: Area

@@ -1,0 +1,18 @@
+unique_name: Market_ID
+object_type: dimension
+label: Market ID
+hierarchies:
+  - unique_name: Market_ID_Hierarchy
+    label: Market ID Hierarchy
+    levels:
+      - unique_name: Market_ID_Level
+is_degenerate: true
+level_attributes:
+  - unique_name: Market_ID_Level
+    label: Market ID Level
+    contains_unique_names: false
+    dataset: V_VIEWING_30
+    key_columns:
+      - MARKET_ID
+    name_column: MARKET_ID
+type: standard

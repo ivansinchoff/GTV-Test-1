@@ -16,15 +16,5 @@ level_attributes:
     key_columns:
       - FACTOR_ID
     name_column: FACTOR_ID
-relationships:
-  - unique_name: ''
-    from:
-      dataset: ''
-      hierarchy: ''
-      join_columns: []
-      level: ''
-    to:
-      dimension: New Dimension
-      level: ''
-    type: embedded
+
 type: standard

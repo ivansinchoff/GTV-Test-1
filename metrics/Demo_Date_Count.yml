@@ -1,0 +1,8 @@
+unique_name: Demo_Date_Count
+object_type: metric
+label: Demo_Date_Count
+description: Demo_Date_Count
+calculation_method: count distinct
+column: DATE
+dataset: V_DEMOGRAPHIC
+format: general number

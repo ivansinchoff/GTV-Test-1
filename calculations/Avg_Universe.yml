@@ -1,0 +1,4 @@
+unique_name: Avg_Universe
+object_type: metric_calc
+label: Avg_Universe
+expression: '[Measures].[Sum_Universe]/[Measures].[Demo_Date_Count]'
