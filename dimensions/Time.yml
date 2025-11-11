@@ -6,7 +6,6 @@ hierarchies:
     label: Time Hierarchy
     levels:
       - unique_name: Broadcast Year
-      - unique_name: Broadcast Month
       - unique_name: TimeID
 level_attributes:
   - unique_name: TimeID
@@ -25,12 +24,4 @@ level_attributes:
     key_columns:
       - BROADCAST_YEAR_CD
     name_column: BROADCAST_YEAR_CD
-  - unique_name: Broadcast Month
-    label: Broadcast Month
-    contains_unique_names: false
-    dataset: V_TIME
-    key_columns:
-      - BROADCAST_MONTH_CD
-    name_column: BROADCAST_MONTH_CD
-    sort_column: FINANCIAL_MONTH_NUM
 type: standard
