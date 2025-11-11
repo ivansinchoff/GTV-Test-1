@@ -2,31 +2,33 @@ unique_name: Time
 object_type: dimension
 label: Time
 hierarchies:
-  - unique_name: Broadcast Time Hierarchy
-    label: Broadcast Time Hierarchy
+  - unique_name: Time Hierarchy
+    label: Time Hierarchy
     levels:
       - unique_name: Broadcast Year
-      - unique_name: Broadcast QTR
       - unique_name: Broadcast Month
-      - unique_name: Broadcast Week
-      - unique_name: Time ID
+      - unique_name: TimeID
 level_attributes:
-  - unique_name: Time ID
-    label: Time ID
+  - unique_name: TimeID
+    label: TimeID
     contains_unique_names: false
     dataset: V_TIME
+    is_unique_key: false
     key_columns:
       - TIMEID
     name_column: TIMEID
+    sort_column: TIMEID
     time_unit: day
-  - unique_name: Broadcast Week
-    label: Broadcast Week
+  - unique_name: Broadcast Year
+    label: Broadcast Year
     contains_unique_names: false
     dataset: V_TIME
+    is_unique_key: false
     key_columns:
-      - BROADCAST_WEEK_CD
-    name_column: BROADCAST_WEEK_CD
-    time_unit: week
+      - BROADCAST_YEAR_CD
+    name_column: BROADCAST_YEAR_CD
+    sort_column: BROADCAST_YEAR_CD
+    time_unit: year
   - unique_name: Broadcast Month
     label: Broadcast Month
     contains_unique_names: false
@@ -36,22 +38,4 @@ level_attributes:
     name_column: BROADCAST_MONTH_CD
     sort_column: FINANCIAL_MONTH_NUM
     time_unit: month
-  - unique_name: Broadcast QTR
-    label: Broadcast QTR
-    contains_unique_names: false
-    dataset: V_TIME
-    key_columns:
-      - BROADCAST_QTR_DESC
-    name_column: BROADCAST_QTR_DESC
-    time_unit: quarter
-  - unique_name: Broadcast Year
-    label: Broadcast Year
-    contains_unique_names: false
-    dataset: V_TIME
-    is_unique_key: true
-    key_columns:
-      - BROADCAST_YEAR_CD
-    name_column: BROADCAST_YEAR_CD
-    sort_column: BROADCAST_YEAR_CD
-    time_unit: year
 type: time
