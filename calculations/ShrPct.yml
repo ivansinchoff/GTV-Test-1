@@ -1,0 +1,4 @@
+unique_name: ShrPct
+object_type: metric_calc
+label: Shr%
+expression: '[Measures].[RatNum]/[Measures].[RatTV]'
