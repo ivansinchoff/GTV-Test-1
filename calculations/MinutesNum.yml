@@ -1,5 +1,5 @@
 unique_name: MinutesNum
 object_type: metric_calc
 label: MinutesNum
-expression: Sum([Measures].[Minutes_count])*30
+expression: '[Measures].[Minutes_count]'
 format: general number
