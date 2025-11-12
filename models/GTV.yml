@@ -16,7 +16,6 @@ metrics:
     folder: Metrics
   - unique_name: RatTV
     folder: Metrics
- 
   - unique_name: MinutesNum
     folder: Metrics
 relationships:
