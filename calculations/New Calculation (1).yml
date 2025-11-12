@@ -1,5 +1,0 @@
-unique_name: New Calculation (1)
-object_type: metric_calc
-label: New Calculation (1)
-expression: '[Measures].[Sum_Universe]/[Measures].[Demo_Date_Count]'
-format: general number
