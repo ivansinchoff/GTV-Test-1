@@ -15,6 +15,9 @@ metrics:
     folder: Metrics
   - unique_name: RatNumTV
   - unique_name: ShrPct
+  - unique_name: RchNum1P
+  - unique_name: RchNum1_Avg
+    folder: Metrics
 relationships:
   - unique_name: V_DEMOGRAPHIC_AGE_ID_to_Age_Age
     from:

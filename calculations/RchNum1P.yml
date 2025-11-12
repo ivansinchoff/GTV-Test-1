@@ -1,0 +1,4 @@
+unique_name: RchNum1P
+object_type: metric_calc
+label: RchNum 1+
+expression: Avg(1)

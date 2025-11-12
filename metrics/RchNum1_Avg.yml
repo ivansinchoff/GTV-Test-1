@@ -1,0 +1,6 @@
+unique_name: RchNum1_Avg
+object_type: metric
+label: RchNum1 Avg
+calculation_method: average
+column: M_REACH_SUPPORT
+dataset: V_VIEWING_30
