@@ -1,4 +1,4 @@
 unique_name: RatPct
 object_type: metric_calc
 label: Rat%
-expression: '[Measures].[RatNum]'
+expression: '[Measures].[RatNum]/([Measures].[Sum_Universe]/[Measures].[Demo_Date_Count])'
