@@ -1,4 +1,4 @@
 unique_name: RatNum
 object_type: metric_calc
 label: Rat#
-expression: '[Measures].[Sum_Weight]/[Measures].[Minutes_count]'
+expression: '[Measures].[Sum_Weight]/[[Measures].[MinutesNum]'

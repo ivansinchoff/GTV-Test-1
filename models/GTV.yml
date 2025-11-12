@@ -18,6 +18,7 @@ metrics:
     folder: Metrics
   - unique_name: ShrPct
     folder: Metrics
+  - unique_name: MinutesNum
 relationships:
   - unique_name: V_DEMOGRAPHIC_AGE_ID_to_Age_Age
     from:
