@@ -1,7 +1,8 @@
 unique_name: GTV
 object_type: model
 label: GTV
-dimensions: []
+dimensions:
+  - Demo_View_ID
 metrics:
   - unique_name: Sum_Weight
     folder: Metrics
@@ -146,17 +147,9 @@ relationships:
     to:
       dimension: Area
       level: Area
-  - unique_name: V_DEMOGRAPHIC_TIME_ID_to_Time_TimeID
+  - unique_name: V_DEMOGRAPHIC_TIME_ID_to_Calendar_Time_TimeID
     from:
       dataset: V_DEMOGRAPHIC
-      join_columns:
-        - TIME_ID
-    to:
-      dimension: Calendar_Time
-      level: TimeID
-  - unique_name: V_VIEWING_30_TIME_ID_to_Calendar_Time_TimeID
-    from:
-      dataset: V_VIEWING_30
       join_columns:
         - TIME_ID
     to:

@@ -1,0 +1,18 @@
+unique_name: Demo_View_ID (1)
+object_type: dimension
+label: Demo View ID
+hierarchies:
+  - unique_name: Demo_View_ID_Hierarchy
+    label: Demo View ID Hierarchy
+    levels:
+      - unique_name: Demo_View_ID_Level
+is_degenerate: true
+level_attributes:
+  - unique_name: Demo_View_ID_Level
+    label: Demo View ID Level
+    contains_unique_names: false
+    dataset: V_VIEWING_30
+    key_columns:
+      - DEMO_VIEW_ID
+    name_column: DEMO_VIEW_ID
+type: standard
