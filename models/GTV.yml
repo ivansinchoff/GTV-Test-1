@@ -1,7 +1,9 @@
 unique_name: GTV
 object_type: model
 label: GTV
-dimensions: []
+dimensions:
+ 
+  - Demo_View_ID
 metrics:
   - unique_name: Sum_Weight
     folder: Metrics
