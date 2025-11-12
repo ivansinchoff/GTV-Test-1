@@ -1,5 +1,0 @@
-unique_name: MinutesNum
-object_type: metric_calc
-label: MinutesNum
-expression: '[Measures].[Minutes_count]'
-format: general number

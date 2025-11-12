@@ -1,6 +1,6 @@
-unique_name: Minutes_count
+unique_name: Halfhour_Count
 object_type: metric
-label: Minutes_count
+label: Halfhour_Count
 description: Minutes
 calculation_method: count distinct
 column: TMINS

@@ -6,7 +6,7 @@ dimensions:
 metrics:
   - unique_name: Sum_Weight
     folder: Metrics
-  - unique_name: Minutes_count
+  - unique_name: Halfhour_Count
     folder: Metrics
   - unique_name: RatNum
     folder: Metrics
@@ -14,8 +14,7 @@ metrics:
     folder: Support Metrics
   - unique_name: Sum_Universe
     folder: Metrics
-  - unique_name: MinutesNum
-    folder: Metrics
+
 relationships:
   - unique_name: V_DEMOGRAPHIC_AGE_ID_to_Age_Age
     from:
