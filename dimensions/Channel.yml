@@ -7,6 +7,15 @@ hierarchies:
     levels:
       - unique_name: Brand
       - unique_name: Channel
+        secondary_attributes:
+          - unique_name: CHANNELNAME
+            label: CHANNELNAME
+            contains_unique_names: false
+            dataset: V_CHANNELS
+            is_unique_key: false
+            key_columns:
+              - CHANNELNAME
+            name_column: CHANNELNAME
 level_attributes:
   - unique_name: Channel
     label: Channel
@@ -25,6 +34,4 @@ level_attributes:
       - BRAND_ID
     name_column: BRANDNAME
     sort_column: BRANDNAME
-
-
 type: standard

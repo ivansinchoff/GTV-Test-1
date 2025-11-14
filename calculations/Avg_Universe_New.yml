@@ -1,0 +1,5 @@
+unique_name: Avg_Universe_New
+object_type: metric_calc
+label: Avg_Universe_New
+expression: '[Measures].[Sum_Universe]/[Measures].[Demo_Date_Count]'
+mdx_aggregate_function: AVG

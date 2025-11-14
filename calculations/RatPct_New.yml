@@ -1,0 +1,4 @@
+unique_name: RatPct_New
+object_type: metric_calc
+label: RatPct
+expression: '[Measures].[RatNum]/[Measures].[Avg_Universe_New]'

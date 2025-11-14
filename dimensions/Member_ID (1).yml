@@ -1,0 +1,23 @@
+unique_name: Member_ID (1)
+object_type: dimension
+label: Member ID
+hierarchies:
+  - unique_name: Member_ID_Hierarchy
+    label: Member ID Hierarchy
+    levels:
+      - unique_name: Member_ID_Level
+is_degenerate: true
+level_attributes:
+  - unique_name: Member_ID_Level
+    label: Member ID Level
+    contains_unique_names: false
+    shared_degenerate_columns:
+      - dataset: V_DEMOGRAPHIC
+        key_columns:
+          - MEMBER_ID
+        name_column: MEMBER_ID
+      - dataset: V_VIEWING_30
+        key_columns:
+          - MEMBER_ID
+        name_column: MEMBER_ID
+type: standard
