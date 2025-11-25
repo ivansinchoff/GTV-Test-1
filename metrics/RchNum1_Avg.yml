@@ -4,3 +4,4 @@ label: RchNum1 Avg
 calculation_method: average
 column: M_REACH_SUPPORT
 dataset: V_VIEWING_30
+unrelated_dimensions_handling: repeat

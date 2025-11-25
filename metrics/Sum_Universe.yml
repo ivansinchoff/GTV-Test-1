@@ -5,3 +5,4 @@ description: Sum Universe
 calculation_method: sum
 column: Weight_USer
 dataset: V_DEMOGRAPHIC
+unrelated_dimensions_handling: repeat

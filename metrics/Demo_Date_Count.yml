@@ -6,3 +6,4 @@ calculation_method: count distinct
 column: DATE
 dataset: V_DEMOGRAPHIC
 format: general number
+unrelated_dimensions_handling: repeat

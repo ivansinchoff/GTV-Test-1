@@ -5,3 +5,4 @@ description: Minutes
 calculation_method: count distinct
 column: TMINS
 dataset: V_VIEWING_30
+unrelated_dimensions_handling: repeat

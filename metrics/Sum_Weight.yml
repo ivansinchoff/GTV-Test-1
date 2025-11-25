@@ -5,3 +5,4 @@ calculation_method: sum
 column: WEIGHT
 dataset: V_VIEWING_30
 format: general number
+unrelated_dimensions_handling: repeat
