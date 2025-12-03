@@ -18,6 +18,11 @@ metrics:
   - unique_name: ShrPct
   - unique_name: Avg_Universe_New
   - unique_name: RatPct_New
+  - unique_name: ATV
+  - unique_name: RatPct_TTV
+  - unique_name: m_V_VIEWING_30_MINUTE_REACH_sum
+    folder: Metrics
+  - unique_name: RchNum1
 relationships:
   - unique_name: V_DEMOGRAPHIC_AGE_ID_to_Age_Age
     from:

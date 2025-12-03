@@ -1,0 +1,26 @@
+unique_name: RchNum1
+object_type: metric_calc
+label: RchNum 1+
+expression: |-
+  IIF(
+      COUNT(
+          NONEMPTY(
+              [Calendar_Time].[Time Hierarchy].[TimeID].members,
+              [Measures].[Sum_Universe]
+          )
+      ) = 0,
+      NULL,
+      AVG(
+          NONEMPTY(
+              [Calendar_Time].[Time Hierarchy].[TimeID].members,
+              [Measures].[Sum_Universe]
+          ),
+          SUM(
+              NONEMPTY(
+                  [Member_ID (1)].[Member_ID_Hierarchy].[Member_ID_Level].members,
+                  [Measures].[m_V_VIEWING_30_MINUTE_REACH_sum]
+              ),
+              [Measures].[Sum_Universe]
+          )
+      )
+  )

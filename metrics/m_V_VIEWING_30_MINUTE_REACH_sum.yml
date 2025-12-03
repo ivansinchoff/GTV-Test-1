@@ -1,0 +1,7 @@
+unique_name: m_V_VIEWING_30_MINUTE_REACH_sum
+object_type: metric
+label: MinuteRch
+description: Minute reach
+calculation_method: sum
+column: MINUTE_REACH
+dataset: V_VIEWING_30

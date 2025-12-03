@@ -1,0 +1,4 @@
+unique_name: RatPct_TTV
+object_type: metric_calc
+label: RatPct_TTV
+expression: ([Channel].[Channel Hierarchy].[Brand].&[0],[Measures].[RatPct_New])

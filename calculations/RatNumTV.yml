@@ -1,4 +1,4 @@
 unique_name: RatNumTV
 object_type: metric_calc
 label: Rat#TV
-expression: ([Channel].[CHANNELNAME].[CHANNELNAME].&[TOTAL TV],[Measures].[RatNum])
+expression: ([Channel].[Channel Hierarchy].[Brand].&[0],[Measures].[RatNum])

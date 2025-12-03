@@ -1,0 +1,4 @@
+unique_name: ATV
+object_type: metric_calc
+label: ATV
+expression: '[Measures].[Sum_Weight]/[Measures].[Sum_Universe]'

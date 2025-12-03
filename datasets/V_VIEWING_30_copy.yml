@@ -1,0 +1,55 @@
+unique_name: V_VIEWING_30_copy
+object_type: dataset
+label: V_VIEWING_30_copy
+columns:
+  - name: TIME_ID
+    data_type: decimal(38,0)
+  - name: MEMBER_ID
+    data_type: decimal(38,0)
+  - name: MARKET_ID
+    data_type: decimal(38,0)
+  - name: CHANNEL_ID
+    data_type: decimal(38,0)
+  - name: ACTIVITY_ID
+    data_type: decimal(38,0)
+  - name: RESIDENCY_ID
+    data_type: decimal(38,0)
+  - name: SOURCE_ID
+    data_type: decimal(38,0)
+  - name: LOCATION_ID
+    data_type: decimal(38,0)
+  - name: ACTIVITY2_ID
+    data_type: decimal(38,0)
+  - name: MINUTE_REACH
+    data_type: decimal(38,0)
+  - name: HALFHOUR_MINUTE_ID
+    data_type: decimal(38,0)
+  - name: WEIGHT
+    data_type: decimal(38,12)
+  - name: REPETITION_COUNT
+    data_type: decimal(38,0)
+  - name: WEIGHT_REACH
+    data_type: decimal(38,12)
+  - name: REPETITION_COUNT_ATS_ACT2
+    data_type: decimal(38,0)
+  - name: REPETITION_COUNT_ATS_ACT1
+    data_type: decimal(38,0)
+  - name: DEMO_VIEW_ID
+    data_type: string
+  - name: DATE
+    data_type: datetime
+  - name: TMINS
+    data_type: decimal(38,0)
+  - name: M_REACH_SUPPORT
+    data_type: decimal(38,12)
+connection_id: con_TECH_DW_DB_ATSCALE_DW
+sql: |2+
+   SELECT
+    VM.*,
+    VM.HALFHOUR_MINUTE_ID * 30 AS TMINS,
+    CASE 
+    WHEN VM.MINUTE_REACH > 0 THEN VM.WEIGHT 
+    ELSE NULL
+    END AS M_REACH_SUPPORT
+    FROM TECH_DW_DB.ATSCALE_DW.VIEWING_MINUTE_PRE_AGG_LAYER VM
+

@@ -1,5 +1,5 @@
 unique_name: ShrPct
 object_type: metric_calc
 label: ShrPct
-expression: '[Measures].[RatNum]/[Measures].[RatNumTV]'
+expression: '[Measures].[RatPct_New]/[Measures].[RatPct_TTV]'
 format: percent
